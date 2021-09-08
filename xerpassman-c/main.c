@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "xerpassman.h"
+#include <string.h>
 
 enum { SIZE = 5 };
 int main(void) {
@@ -15,9 +16,9 @@ int main(void) {
     size_t r2 = fread(b, sizeof b[0], SIZE, f2);
     fclose(f2);
 
-    // FILE *f;
-    printf("Read: \n");
-    read_file("tmp.txt");
+    char *homedir = getenv("HOME");
+    char *configdir = "";
+    printf("test");
     return 0;
 }
 
@@ -46,7 +47,6 @@ int read_file(const char * restrict file) {
 
 
 /*
-#!/bin/pytthon
 import base64
 import getpass
 import hashlib
