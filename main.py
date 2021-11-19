@@ -1,4 +1,4 @@
-#!/bin/pytthon
+#!/usr/bin/python
 import base64
 import getpass
 import hashlib
